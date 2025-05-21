@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Shop</title>
+  <link rel="stylesheet" href="/Shop/shop.css">
+  <link rel="shortcut icon" href="/images/logo.png" type="image/png" />
+ 
+</head>
+<body>
+
+<!-- 🔷 Header Section -->
+<header class="main-header">
+  <div class="logo">🛍️ <span>My</span>Shop</div>
+  <div class="search-bar">
+    <input type="text" placeholder="Search products..." />
+    <button>Search</button>
+  </div>
+  <div class="icons">
+    <a href="#">
+    <button id="cart-btn" onclick="window.location.href='/Cart/cart.html'">🛒 Cart (<span id="cart-count">0</span>)</a></button>
+    <a href="#">
+    <button id="wish-btn">❤️ Wishlist (<span id="wish-count">0</span>)</a></button>
+  </div>
+</header>
+
+<!-- 🔷 Banner Section -->
+<section class="banner">
+  <div class="banner-text">
+    <h1>Explore New Arrivals</h1>
+    <p>Trendy. Affordable. Quality.</p>
+    <button>Shop Now</button>
+  </div>
+</section>
+
+<!-- 🔷 Main Shop Section -->
+<main class="shop-wrapper">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h3>Filter by Category</h3>
+    <ul>
+      <li><a href="#">Men</a></li>
+      <li><a href="#" onclick="window.location.href='/Women/women.html'">Women</a></li>
+      <li><a href="#">Accessories</a></li>
+      <li><a href="#">Shoes</a></li>
+    </ul>
+  </aside>
+
+  <!-- Products -->
+  <section class="product-grid">
+    <!-- Repeat product cards -->
+    <div class="product-card">
+      <img src="/Shop/Image/smart-watch.png" alt="smart-watch" />
+      <h4>Smart Watch</h4>
+      <p>$80</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="/Shop/Image/Wireless Earbuds.png" alt="Wireless Earbuds" />
+      <h4>Wireless Earbuds</h4>
+      <p>$50</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="/Shop/Image/Leather Wallet.png" alt="Leather Wallet" />
+      <h4>Leather Wallet</h4>
+      <p>$35</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="/Shop/Image/Casual Shoes.png" alt="Casual Shoes" />
+      <h4>Casual Shoes</h4>
+      <p>$70</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="/Shop/Image/Backpack.png" alt="Backpack" />
+      <h4>Backpack</h4>
+      <p>$45</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="/Shop/Image/Graphic T-Shirt.png" alt="Graphic T-Shirt" />
+      <h4>Graphic T-Shirt</h4>
+      <p>$25</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="/Shop/Image/Denim Jacket.png" alt="Denim Jacket" />
+      <h4>Denim Jacket</h4>
+      <p>$95</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="/Shop/Image/Sunglasses.png" alt="Sunglasses" />
+      <h4>Sunglasses</h4>
+      <p>$30</p>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+</main>
+
+<!-- 🔷 Footer -->
+<footer class="main-footer">
+  <div class="footer-content">
+    <div class="footer-logo">🛍️ MyShop</div>
+    <ul>
+      <li>📍 123 Street, City</li>
+      <li>📞 +91 9876543210</li>
+      <li>📧 info@myshop.com</li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    © 2025 My Shop. All rights reserved.
+  </div>
+</footer>
+
+<script src="/Shop/shop.js"></script>
+</body>
+</html>
