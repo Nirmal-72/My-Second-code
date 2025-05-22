@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My-Shop Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="/images/logo.png" type="image/png" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"><h1><span>My</span>Shop</h1></div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#" onclick="window.location.href='/Product/product.html'">Products</a></li>
+      <li><a href="#" onclick="window.location.href='/Shop/shop.html'">About</a></li>
+      <li><a href="#" onclick="window.location.href='/login/login.html'">Contact</a></li>
+    </ul>
+    <div class="search">
+      <input type="text" placeholder="Search products..." id="search-bar" />
+      <button onclick="searchProduct()">Search</button>
+    </div>
+    <div class="cart">
+      <button id="cart-btn" onclick="window.location.href='/Cart/cart.html'">🛒 <span id="cart-count">0</span></button>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <section class="banner">
+    <img src="/images/banner.png" alt="Banner" />
+    <div class="banner-text">
+      <h2>Exclusive Offer</h2>
+      <p>Up to 50% off on selected items!</p>
+      <button onclick="window.location.href='/Shop/shop.html'">Shop Now</button>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="product-grid">
+    <!-- 10 Products -->
+    <div class="product">
+      <img src="images/product-1.jpg" alt="Product 1"/>
+      <h3>Stylish Shirt</h3>
+      <p>₹599</p>
+      <button onclick="addToCart(599, 'Stylish Shirt')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/product-2.jpg" alt="Product 2"/>
+      <h3>Casual shirt</h3>
+      <p>₹399</p>
+      <button onclick="addToCart(399, 'Casual T-shirt')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/product-3.jpg" alt="Product 3"/>
+      <h3>Jeans</h3>
+      <p>₹799</p>
+      <button onclick="addToCart(799, 'Sport Shoes')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/product-4.jpg" alt="Product 4"/>
+      <h3>Designer</h3>
+      <p>₹999</p>
+      <button onclick="addToCart(999, 'Designer Jeans')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/Leather-jacket.png" alt="Product 5"/>
+      <h3>Leather Jacket</h3>
+      <p>₹1499</p>
+      <button onclick="addToCart(1499, 'Leather Jacket')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/Digital.png" alt="Product 6"/>
+      <h3>Digital Watch</h3>
+      <p>₹2199</p>
+      <button onclick="addToCart(299, 'Digital Watch')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/Bluetooth Headset.png" alt="Product 7"/>
+      <h3>Bluetooth Headset</h3>
+      <p>₹5999</p>
+      <button onclick="addToCart(499, 'Bluetooth Headset')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/Backpack.png" alt="Product 8"/>
+      <h3>Backpack</h3>
+      <p>₹799</p>
+      <button onclick="addToCart(799, 'Backpack')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/Fitness Band.png" alt="Product 9"/>
+      <h3>Fitness Band</h3>
+      <p>₹999</p>
+      <button onclick="addToCart(999, 'Fitness Band')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/Power Bank.png" alt="Product 10"/>
+      <h3>Power Bank</h3>
+      <p>₹599</p><button onclick="addToCart(599, 'Power Bank')">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My-Shop. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
